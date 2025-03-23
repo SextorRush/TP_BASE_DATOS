@@ -91,7 +91,7 @@ string Consultar(int Clave_Usuario){
 		else{
 			return "Clave no encontrada";
 			}
-	
+ hola
 	}
 void Start(){
 		
