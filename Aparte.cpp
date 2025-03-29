@@ -64,7 +64,16 @@ int BlokeLibre(){
             TablaDatos[i].valor=a.valor;
             TablaDatos[i].dir=nullptr;
             break;
-        } 
+        } else if(i>4){
+            for(int i=20;i<30;i++){
+
+                if(TablaDatos[i].clave==0){
+                TablaDatos[i].clave=a.clave;
+                TablaDatos[i].valor=a.valor;
+                TablaDatos[i].dir=nullptr;
+                break;
+            } 
+        }
 
     }
 
