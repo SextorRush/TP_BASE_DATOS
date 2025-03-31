@@ -77,12 +77,33 @@ int BlokeLibre(){
 
     }
 
- }
-
+ }}
+bool buscar_max(int i){
+    bool flag=false;
+    for(i;i<4;i++){
+        if(TablaDatos[i].clave>a.dato){
+            flag=true;
+            return flag;
+        }
+    }
+    return flag;
 }
 
+void ordenar(int pos){
+    sort(TablaDatos[pos],TablaDatos[pos]+4);
+}
 
 }}
 
-
+void enviar_al_overflow(){
+    for(int i=20;i<30;i++){
+        if(TablaDatos[i].clave==0){
+            TablaDatos[i].clave=a.clave;
+            TablaDatos[i].valor=a.valor;
+            TablaDatos[i].dir=nullptr;
+        } else {
+            cout<<"Overflow lleno";
+        }
+    }
+}
 }
